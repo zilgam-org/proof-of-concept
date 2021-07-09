@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="styles.css">
+        <!--
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" 
+            integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer" />
+
+        -->
+        
+        <style type="text/css">
+            *{
+                margin: 0;
+                padding: 0;
+                /* background-color: #FFFFFF;  */
+            }
+            .carousel{
+                height: 500px;
+            }
+            .carousel .carousel-item {
+                width: 400px;
+            }
+        </style> -->
+        <title>ZilGAM</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header" style="background-image: url(assets/img/splash-blue.png);">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="index.html" class="nav__logo">
+                        <img src="assets/img/ZilGAM.png" width="150" height="150" style="margin-top: 5px;">
+                    </a>
+                    
+                    
+                </div>
+                
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <!--
+                            <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                            <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
+                            <li class="nav__item"><a href="#mypieces" class="nav__link">My Pieces</a></li>
+                            <li class="nav__item"><a href="#contact" class="nav__link">Contact Us</a></li>
+                        -->
+                        <li class="nav__item"><a href="#about" class="nav__link active">Projects</a></li>
+                        <li class="nav__item"><a href="#home" class="nav__link active"><img src="assets/img/insta-logo.png" width="25" height="28"></a></li>
+
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <div class="block">
+                <section class = "hero" style="background-image: url(assets/img/splash-index.png);">
+                    <div class="hero-body">
+                        <section class="home bd-grid" id="home">
+                            <div class="home__data">
+                                <h1 class="home__title">Welcome to <br><span class="home__title-color" style="color: rgb(4, 59, 78);">ZilGAM!</span></h1>
+                
+                                <h2> Art · Music </h2>
+                                <p>We connect you to digital artists and musicians <br> to quench your fervent thirst for quality art.</p>
+                                <br>
+                                <p>Art is how we decorate space, music is how we decorate time.</p>
+                                
+                                
+                                <!--
+                                    <a href="#" class="button" style="margin-top: 50px;">Projects</a>
+                                -->
+                              
+                            </div>
+            
+                            <div class="home__social">
+                                <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                                <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                            </div>
+
+                                <!--
+                                    <div class="home__img">    
+                                        <img src="assets/img/index_pic.png" height="900" width="500">
+                                    </div>
+                                -->
+                                
+                           
+                            
+                        
+                        
+                        </section>
+                    </div>
+                </section>
+            </div>
+
+            <!--
+                <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Welcome to <br><span class="home__title-color" style="color: rgb(4, 59, 78);">ZilGAM!</span></h1>
+    
+                    <h2> Art · Music </h2>
+                    <p>We connect you to digital artists and musicians <br> to quench your fervent thirst for quality art.</p>
+                    <br>
+                    <p>Art is how we decorate space, music is how we decorate time.</p>
+                    
+                    
+              
+                    //<a href="#" class="button" style="margin-top: 50px;">Projects</a>
+               
+                        
+                    
+            </div>
+
+            <div class="home__social">
+                <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+            </div>
+          
+            <div class="home__img">    
+                <img src="assets/img/ZilGAM-pic.png" height="900" width="500">
+            </div>
+
+            
+        </section>
+          
+            
+
+            <!-===== ABOUT =====
+            <section class="about section " id="about">
+                <h2 class="section-title">Projects</h2>
+                
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/AP-1.png" alt="" >
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">AudioPulse</h2>
+                        <p class="about__text"> AudioPulse generates pulsating circles dancing to our groovy music library. Every piece reveals a unique combination of vibrant colours and varying sizes that visually portrays the spectrum of one among ten non-copyright sounds. 
+                        <a href="about1.html" class="button" style="margin-top: 30px;">View Project</a>
+                    </div>                                   
+                </div>
+                <div class="about__container bd-grid" style="margin-top: 50px;">
+                    <div class="about__img">
+                        <img src="assets/img/spiralx_1.png" alt="" width ="700">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">SpiralX</h2>
+                        <p class="about__text"> SpiralX art pieces are based on simple ellipses that take on varying shapes, sizes, and colour combinations based on the transaction hash to generate a distinct and appealing artwork each time.<br>
+                        <a href="about2.html" class="button" style="margin-top: 30px;">View Project</a>
+                    </div>                                   
+                </div>
+            </section>
+            -->
+            <section class="about section " id="about" >
+                <h2 class="section-title">Projects</h2>
+                <div class="block">
+                    <section class = "hero" style="height: 300px;">
+                        <div class="hero-body">
+                            <div class="about__container bd-grid">
+                                
+                                
+                                
+                                
+                                <div>
+                                    <h2 class="about__subtitle">AudioPulse</h2>
+                                    <p class="about__text"> AudioPulse generates pulsating circles dancing to our groovy music library. Every piece reveals a unique combination of vibrant colours and varying sizes that visually portrays the spectrum of one among ten non-copyright sounds. 
+                                    
+                                    <a href="about1.html" class="button" style="margin-top: 30px; background-color: rgb(167, 68, 230);">View Project</a>
+                                </div>  
+                                <div class="about__img">
+                                    <img src="assets/img/AP-1.png" alt="" >
+                                </div>
+                                                                 
+                            </div>
+                        </div>
+                    </section> 
+                </div>
+                <div class="block">
+                    <section class = "hero" style="height: 300px;">
+                        <div class="hero-body">
+                            <div class="about__container bd-grid">
+                                <div class="about__img">
+                                    <img src="assets/img/spiralx_1.png" alt="">
+                                </div>
+                                
+                                <div>
+                                    <h2 class="about__subtitle">SpiralX</h2>
+                                    <p class="about__text"> SpiralX art pieces are based on simple ellipses that take on varying shapes, sizes, and colour combinations based on the transaction hash to generate a distinct and appealing artwork each time.<br>
+                                    <a href="about2.html" class="button" style="margin-top: 30px; background-color: rgb(235, 143, 68);">View Project</a>
+                                </div>                                   
+                            </div>
+                        </div>
+                    </section> 
+                </div>
+
+            </section>
+            
+
+            <!--===== GALLERY =====
+            <section class="gallery section" id="gallery">
+                <h2 class="section-title">Gallery</h2>
+
+                <div class="carousel">
+                    <a href="#one" class="carousel-item">
+                        <img src="assets/img/art1.jpg">
+                    </a>
+                    <a href="#two" class="carousel-item">
+                        <img src="assets/img/art2.png">
+                    </a>
+                    <a href="#three" class="carousel-item">
+                        <img src="assets/img/art3.png">
+                    </a>
+                    <a href="#four" class="carousel-item">
+                        <img src="assets/img/pink.png">
+                    </a>
+                    <a href="#five" class="carousel-item">
+                        <img src="assets/img/yellowteal-gradient.png">
+                    </a>
+                </div>
+            </section>
+            <div style = "margin-bottom: 50px"></div> 
+            -->
+            <!--===== MY PIECES =====
+            <section class="mypieces section" id="pieces">
+                <h2 class="section-title">My Pieces</h2>
+
+                <div class="mypieces__container bd-grid">
+                    <div class="mypieces__img">
+                        <img src="assets/img/art1.jpg" alt="">
+                    </div>
+                    <div class="mypieces__img">
+                        <img src="assets/img/art2.png" alt="">
+                    </div>
+                    <div class="mypieces__img">
+                        <img src="assets/img/art3.png" alt="">
+                    </div>
+                    <div class="mypieces__img">
+                        <img src="assets/img/orange-gradient.png" alt="">
+                    </div>
+                    <div class="mypieces__img">
+                        <img src="assets/img/pink.png" alt="">
+                    </div>
+                    <div class="mypieces__img">
+                        <img src="assets/img/pinkpurple-gradient.png" alt="">
+                    </div>
+                </div>
+            </section>
+            -->
+            <!--===== CONTACT =====
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact Us</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Submit" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+            -->
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer" style="background-image: url(assets/img/splash-blue.png);">
+            <p class="footer__title">ZilGAM</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p>&#169; 2021 Copyright All rights reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+
+        <!-- ===== CAROUSEL JS ===== -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" 
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer">
+        </script>
+        <!--
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" 
+            integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer">
+        </script>
+        -->
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.carousel').carousel({
+                    indicators: true
+                })
+            });
+        </script>
+    </body>
+</html>

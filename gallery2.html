@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Cards</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+        <!--===== HEADER =====-->
+        <header class="l-header" style="background: #FFF">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="index.html" class="nav__logo">
+                        <img src="assets/img/ZilGAM.png" width="150" height="150" style="margin-top: 5px;">
+                    </a>
+                    
+                    
+                </div>
+                
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <!--
+                            <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                            <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
+                            <li class="nav__item"><a href="#mypieces" class="nav__link">My Pieces</a></li>
+                            <li class="nav__item"><a href="#contact" class="nav__link">Contact Us</a></li>
+                        -->
+                        <li class="nav__item"><a href="index.html#about" class="nav__link active">Projects</a></li>
+                        <li class="nav__item"><a href="#home" class="nav__link active">Gallery</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">My Pieces</a></li>
+                        <li class="nav__item"><a href="#home" class="nav__link active"><img src="assets/img/insta-logo.png" width="25" height="28"></a></li>
+
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <div class="app">
+        <div class="cardList">
+            <button class="cardList__btn btn btn--left">
+            <div class="icon">
+                <svg>
+                <use xlink:href="#arrow-left"></use>
+                </svg>
+            </div>
+            </button>
+
+            <div class="cards__wrapper">
+            <div class="card current--card">
+                <div class="card__image">
+                <img src="assets/img/splash-pink.png" alt="" />
+                </div>
+            </div>
+
+            <div class="card next--card">
+                <div class="card__image">
+                <img src="assets/img/splash-peach.png" alt="" />
+                </div>
+            </div>
+
+            <div class="card previous--card">
+                <div class="card__image">
+                <img src="assets/img/splash-blue.png" alt="" />
+                </div>
+            </div>
+            </div>
+
+            <button class="cardList__btn btn btn--right">
+            <div class="icon">
+                <svg>
+                <use xlink:href="#arrow-right"></use>
+                </svg>
+            </div>
+            </button>
+        </div>
+
+        <div class="infoList">
+            <div class="info__wrapper">
+            <div class="info current--info">
+                <h1 class="text name">Spinning Wheel</h1>
+                <h4 class="text location">Audio Pulse</h4>
+                <p class="text description">Click here to purchase a similar art piece</p>
+            </div>
+
+            <div class="info next--info">
+                <h1 class="text name">The Abyss</h1>
+                <h4 class="text location">SpiralX</h4>
+                <p class="text description">A bottomless adventure is never far away</p>
+            </div>
+
+            <div class="info previous--info">
+                <h1 class="text name">Anthropoid Origins</h1>
+                <h4 class="text location">Dancing Monkeys</h4>
+                <p class="text description">Let your primate dreams come true</p>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="app__bg">
+            <div class="app__bg__image current--image">
+            <img src="assets/img/splash-pink.png" alt="" />
+            </div>
+            <div class="app__bg__image next--image">
+            <img src="assets/img/splash-peach.png" alt="" />
+            </div>
+            <div class="app__bg__image previous--image">
+            <img src="assets/img/splash-blue.png" alt="" />
+            </div>
+        </div>
+        </div>
+
+        <div class="loading__wrapper">
+        <div class="loader--text">Loading...</div>
+        <div class="loader">
+            <span></span>
+        </div>
+        </div>
+
+
+        <svg class="icons" style="display: none;">
+        <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+            <polyline points='328 112 184 256 328 400'
+                style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+        </symbol>
+        <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+            <polyline points='184 112 328 256 184 400'
+                style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+        </symbol>
+        </svg>
+
+        <script type="text/javascript" src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+        <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>
