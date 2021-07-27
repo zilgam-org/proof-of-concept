@@ -114,6 +114,10 @@
                 <script>
                     if (typeof window.zilPay == 'undefined') { 
                         console.log("Please install Zilpay"); }
+                    else{
+                        console.log("Zilpay detected!")
+                    }
+                    
                     window.zilPay.wallet.connect();
 
                   
