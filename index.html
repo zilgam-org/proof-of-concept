@@ -117,7 +117,25 @@
                     if (window.zilPay) { 
                         console.log("Zilpay detected!"); 
                 
-                        window.zilPay.wallet.connect();
+                        const zilliqa = window.zilPay;
+                        const utils = zilPay.utils;
+
+                        zilliqa.wallet.connect();
+
+                        const amount = utils.units.toQa(10, utils.units.Units.Zil); // 10 zil
+                        const gasPrice = utils.units.toQa('1000', utils.units.Units.Li);
+                        const txParams = zilliqa.transactions.new({ // Create params for our trasnaction.
+                            toAddr: 'zil1wl38cwww2u3g8wzgutxlxtxwwc0rf7jf27zace',
+                            amount: amount,
+                            gasPrice: gasPrice
+                        });
+                        try {
+                            const txResult = await zilliqa.blockchain.createTransaction(txParams);
+                        } catch (err) {
+                            // if user rejected this transaction or other problem.
+                        }
+
+                        zilliqa.wallet.sign;
 
                     }else{
                         console.log("Please install Zilpay");
@@ -192,9 +210,6 @@
                     <section class = "hero" style="height: 300px;">
                         <div class="hero-body">
                             <div class="about__container bd-grid">
-                                
-                                
-                                
                                 
                                 <div>
                                     <h2 class="about__subtitle">AudioPulse</h2>
