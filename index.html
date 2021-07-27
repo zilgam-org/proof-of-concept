@@ -130,7 +130,7 @@
                             gasPrice: gasPrice
                         });
                         try {
-                            const txResult = await zilliqa.blockchain.createTransaction(txParams);
+                            const txResult = zilliqa.blockchain.createTransaction(txParams);
                         } catch (err) {
                             // if user rejected this transaction or other problem.
                         }
