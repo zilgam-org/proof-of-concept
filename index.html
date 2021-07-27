@@ -112,15 +112,14 @@
             <div>
                 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.min.js" integrity="sha256-0SGl1PJNDyJwcV5T+weg2zpEMrh7xvlwO4oXgvZCeZk=" crossorigin="anonymous"></script> -->
                 <script>
-                    if (typeof window.zilPay !== 'undefined') { 
-                        console.log("Zilpay detected!"); }
-                    else{
+                    if (window.zilPay) { 
+                        console.log("Zilpay detected!"); 
+                
+                        window.zilPay.wallet.connect();
+
+                    }else{
                         console.log("Please install Zilpay");
                     }
-
-                    window.zilPay.wallet.connect();
-
-                  
                     
                 </script>
             </div>
