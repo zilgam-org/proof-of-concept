@@ -65,11 +65,6 @@
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-menu'></i>
                 </div>
-
-                <script>
-                if (typeof window.zilPay !== 'undefined') { console.log("Not using Zilpay"); }
-                window.zilPay.wallet.connect();
-                </script>
             </nav>
         </header>
 
@@ -112,6 +107,13 @@
                         </section>
                     </div>
                 </section>
+            </div>
+
+            <div>
+                <script>
+                    if (typeof window.zilPay !== 'undefined') { console.log("Not using Zilpay"); }
+                    window.zilPay.wallet.connect();
+                    </script>
             </div>
 
             <!--
