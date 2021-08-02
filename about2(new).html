@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="styles.css">
+        <!--
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" 
+            integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer" />
+
+        -->
+        
+        <style type="text/css">
+            *{
+                margin: 0;
+                padding: 0;
+                /* background-color: #FFFFFF;  */
+            }
+            .carousel{
+                height: 500px;
+            }
+            .carousel .carousel-item {
+                width: 400px;
+            }
+        </style> -->
+        <title>ZilGAM</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header" style="background-image: url(assets/img/splash-peach.png);">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="index.html" class="nav__logo">
+                        <img src="assets/img/ZilGAM.png" width="150" height="150" style="margin-top: 5px;">
+                    </a>
+                    
+                    
+                </div>
+                
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <!--
+                            <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                            <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
+                            <li class="nav__item"><a href="#mypieces" class="nav__link">My Pieces</a></li>
+                            <li class="nav__item"><a href="#contact" class="nav__link">Contact Us</a></li>
+                        -->
+                        <li class="nav__item"><a href="index.html#about" class="nav__link active">Projects</a></li>
+                        <!-- <li class="nav__item"><a href="gallery2.html" class="nav__link">Gallery</a></li> -->
+                        <li class="nav__item"><a href="gallery1.html" class="nav__link">My Pieces</a></li>
+                        <li class="nav__item"><a href="#home" class="nav__link active"><img src="assets/img/insta-logo.png" width="25" height="28"></a></li>
+
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====
+            <section class="home bd-grid" id="home" style="background-image: url(assets/img/splash-pink.png);">
+                <div class="home__data">
+                    <h1 class="home__title">AudioPulse</h1>
+    
+                  
+                    <p>AudioPulse generates pulsating circles dancing to <br>our groovy music library. Every piece reveals a unique <br>combination of vibrant colours and varying sizes <br>that visually portrays the spectrum of one among <br>ten non-copyright sounds.   </p>
+                    
+                    
+                
+                    <a href="#" class="button" style="margin-top: 50px;">Projects</a>
+                
+                        
+                    
+                </div>
+
+                <div class="home__social">
+                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">    
+                    <img src="assets/img/bubbles.png">
+                </div>
+            </section>
+            -->
+
+            <div class="block" style="background-image: url(assets/img/splash-peach.png);">
+                <section class = "hero">
+                    <div class="hero-body">
+                        <section class="home bd-grid" id="home">
+                            <div class="home__data">
+                                <h1 class="home__title">SpiralX</h1>
+                
+                              
+                                <p>SpiralX is a series of art pieces based<br> 
+                        	on ellipses with varying combinations<br>
+                        	of shapes, sizes and colours to generate<br>
+                        	a distinct and appealing artwork each time.</p>
+                                
+                            
+                                <a href="#" class="button" style="margin-top: 50px;">Projects</a>
+                            
+                                    
+                                
+                            </div>
+            
+                            <div class="home__social">
+                                <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                                <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                            </div>
+                            <!--
+                                <div class="home__img">    
+                                <img src="assets/img/bubbles.png">
+                                </div>
+                            -->
+                            
+                        
+                        </section>
+                    </div>
+                </section>
+            </div>
+            
+
+        
+            <!--===== Key Features =====
+            <section class = "stats section" id = "features">
+                <div class = "row">
+                    <div class="column" style="margin-top: 25px;">
+                        <img src="assets/img/fingerprint.png" width = "100" height = "100" style="margin-left: 25px; margin-bottom: 20px;">
+                         
+                        <p style="font-size: large; ">
+                            91
+                        </p>
+                        <p style="font-size: medium;">
+                            uniquely generated
+                        </p> 
+                        <p style="font-size: small;">
+                            audio-visual artworks 
+                        </p>
+                        
+                        
+                    </div>
+                    <div class="column" style="margin-top: 25px;">
+                        <img src="assets/img/nft.png" width = "100" height = "100" style="margin-left: 25px; margin-bottom: 20px;">
+                        <p style="font-size: large;">
+                            NFT
+                        </p>
+                        <p style="font-size: medium;">
+                            minted to generate
+                        </p> 
+                        <p style="font-size: small;">
+                            art pieces
+                        </p>
+                        
+                    </div>    
+                    <div class="column" style="margin-top: 25px;">
+                        <img src="assets/img/blockchain.png" width = "100" height = "100" style="margin-left: 25px; margin-bottom: 20px;">
+                        <p style="font-size: large;">
+                            Blockchain 
+                        </p>
+                        <p style="font-size: medium;">
+                            immutably stores
+                        </p> 
+                        <p style="font-size: small;">
+                            audio-visual artworks 
+                        </p>
+                        
+                    </div>   
+
+                </div>
+            </section>
+        -->
+        <section class="about section " id="about" >
+            <h2 class="section-title">Key Features</h2>
+            <div class="block" >
+                <section class = "hero" style="height: 300px; margin-top: 50px;">
+                    <div class="hero-body">
+                        <div class="about__container bd-grid">
+                            
+                            
+                            
+                            
+                            <div>
+                                <h2 class="about__subtitle">Uniquely Generated</h2>
+                                <p class="about__text"> Each ellipse based artwork which is generated is unique and is dependent on the transaction which is used to mint the token that it is backed by. No two pieces can thus look alike. 
+                                
+                                
+                            </div>  
+                            <div>
+                                <img src="assets/img/fingerprint 2.png" alt="" width="150px" height="150px">
+                            </div>
+                                                             
+                        </div>
+                    </div>
+                </section> 
+            </div>
+            <div class="block">
+                <section class = "hero" style="height: 300px;">
+                    <div class="hero-body">
+                        <div class="about__container bd-grid">
+                            <div class="about__img">
+                                <img src="assets/img/NFT 2.png" alt="">
+                            </div>
+                            
+                            <div>
+                                <h2 class="about__subtitle">NFT</h2>
+                                <p class="about__text"> NFTs are used to tokenize and proove ownership of all the artwork. ZRC-1 tokens consume only a fraction of the energy that ERC-721 and other tokens do, making them more environmentally friendly.<br>
+                                
+                            </div>                                   
+                        </div>
+                    </div>
+                </section> 
+            </div>
+            <div class="block">
+                <section class = "hero" style="height: 300px;">
+                    <div class="hero-body">
+                        <div class="about__container bd-grid">
+                            
+                            
+                            <div>
+                                <h2 class="about__subtitle">Powered by the Blockchain</h2>
+                                <p class="about__text"> The Zilliqa blockchain also immutably stores the scripts that are used to generate the artpieces using the InterPlanetary File System. All transactions are also recorded on this tamper-proof distributed ledger, providing full transparency in next generation auctions. <br>
+                            </div>  
+                            <div>
+                                <img src="assets/img/blockchain 2.png" alt="" width="150px" height="150px" >
+                            </div>                                 
+                        </div>
+                    </div>
+                </section> 
+            </div>
+
+        </section>
+        
+            
+            <section class="about section " id="about" >
+                <h2 class="section-title">Gallery</h2>
+                <section class="about section " id="about">
+                    <!--ROW 1-->
+                    <div class = "cards_2">
+    
+                        <div class="about__container bd-grid">
+                            <div class="about__img">
+                                <!-- <img src="assets/img/gif1.gif" alt=""> -->
+                                <iframe style="width: 275px; height: 275px; overflow: hidden; border: 5px solid #000;"  scrolling="no" frameborder="0" src="https://preview.p5js.org/SaakshiSaraf/embed/x2B98XPYe"></iframe>
+                            </div>
+                            
+                                                            
+                        </div>
+                        <div class="about__container bd-grid">
+                            <div class="about__img">
+                                <!-- <img src="assets/img/gif2.gif" alt=""> -->
+                                <iframe style="width: 275px; height: 275px; overflow: hidden; border: 5px solid #000;"  scrolling="no" frameborder="0" src="https://preview.p5js.org/SaakshiSaraf/embed/7Akm0BVL3"></iframe>
+                            </div>
+                            
+                                                            
+                        </div>
+                        <div class="about__container bd-grid">
+                            <div class="about__img">
+                                <!-- <img src="assets/img/gif3.gif" alt="c" > -->
+                                <iframe style="width: 275px; height: 275px; overflow: hidden; border: 5px solid #000;"  scrolling="no" frameborder="0" src="https://preview.p5js.org/SaakshiSaraf/embed/hGQp3FPRT"></iframe>
+                            </div> 
+                            
+                                                            
+                        </div>
+                    </div>
+                    <!--ROW 2-->
+                    <div class = "cards_2">
+    
+                        <div class="about__container bd-grid">
+                            <div class="about__img">
+                                <!-- <img src="assets/img/gif1.gif" alt=""> -->
+                                <iframe style="width: 275px; height: 275px; overflow: hidden; border: 5px solid #000;"  scrolling="no" frameborder="0" src="https://preview.p5js.org/SaakshiSaraf/embed/A4QNPsOMR"></iframe>
+                            </div>
+                            
+                                                            
+                        </div>
+                        <div class="about__container bd-grid">
+                            <div class="about__img">
+                                <!-- <img src="assets/img/gif2.gif" alt=""> -->
+                                <iframe style="width: 275px; height: 275px; overflow: hidden; border: 5px solid #000;"  scrolling="no" frameborder="0" src="https://preview.p5js.org/SaakshiSaraf/embed/KP3mkvGS-"></iframe>
+                            </div>
+                            
+                                                            
+                        </div>
+                        <div class="about__container bd-grid">
+                            <div class="about__img">
+                                <!-- <img src="assets/img/gif3.gif" alt="c" > -->
+                                <iframe style="width: 275px; height: 275px; overflow: hidden; border: 5px solid #000;"  scrolling="no" frameborder="0" src="https://preview.p5js.org/SaakshiSaraf/embed/0uiNvmTw9"></iframe>
+                            </div> 
+                            
+                                                            
+                        </div>
+                    </div>
+
+                    <!--ROW 3-->
+                    <div class = "cards_2">
+    
+                        <div class="about__container bd-grid">
+                            <div class="about__img">
+                                <!-- <img src="assets/img/gif1.gif" alt=""> -->
+                                <iframe style="width: 275px; height: 275px; overflow: hidden; border: 5px solid #000;"  scrolling="no" frameborder="0" src="https://preview.p5js.org/SaakshiSaraf/embed/b5PyE32V3"></iframe>
+                            </div>
+                            
+                                                            
+                        </div>
+                        <div class="about__container bd-grid">
+                            <div class="about__img">
+                                <!-- <img src="assets/img/gif2.gif" alt=""> -->
+                                <iframe style="width: 275px; height: 275px; overflow: hidden; border: 5px solid #000;"  scrolling="no" frameborder="0" src="https://preview.p5js.org/SaakshiSaraf/embed/-Qw1F1IVb"></iframe>
+                            </div>
+                            
+                                                            
+                        </div>
+                        <div class="about__container bd-grid">
+                            <div class="about__img">
+                                <!-- <img src="assets/img/gif3.gif" alt="c" > -->
+                                <iframe style="width: 275px; height: 275px; overflow: hidden; border: 5px solid #000;"  scrolling="no" frameborder="0" src="https://preview.p5js.org/SaakshiSaraf/embed/zAut0czwg"></iframe>
+                            </div> 
+                            
+                                                            
+                        </div>
+                    </div>
+
+                    <!--ROW 4-->
+                    <div class = "cards_2">
+    
+                        <div class="about__container bd-grid">
+                            <div class="about__img">
+                                <!-- <img src="assets/img/gif1.gif" alt=""> -->
+                                <iframe style="width: 275px; height: 275px; overflow: hidden; border: 5px solid #000;"  scrolling="no" frameborder="0" src="https://preview.p5js.org/SaakshiSaraf/embed/Xw5H7d-T6"></iframe>
+                            </div>
+                            
+                                                            
+                        </div>
+                        <div class="about__container bd-grid">
+                            <div class="about__img">
+                                <!-- <img src="assets/img/gif2.gif" alt=""> -->
+                                <iframe style="width: 275px; height: 275px; overflow: hidden; border: 5px solid #000;"  scrolling="no" frameborder="0" src="https://preview.p5js.org/SaakshiSaraf/embed/tBrst8yYH"></iframe>
+                            </div>
+                            
+                                                            
+                        </div>
+                        <div class="about__container bd-grid">
+                            <div class="about__img">
+                                <!-- <img src="assets/img/gif3.gif" alt="c" > -->
+                                <iframe style="width: 275px; height: 275px; overflow: hidden; border: 5px solid #000;"  scrolling="no" frameborder="0" src="https://preview.p5js.org/SaakshiSaraf/embed/iz1rfNiVj"></iframe>
+                            </div> 
+                            
+                                                            
+                        </div>
+                    </div>
+
+                    <!--ROW 5-->
+                    <div class = "cards_2">
+    
+                        <div class="about__container bd-grid">
+                            <div class="about__img">
+                                <!-- <img src="assets/img/gif1.gif" alt=""> -->
+                                <iframe style="width: 275px; height: 275px; overflow: hidden; border: 5px solid #000;"  scrolling="no" frameborder="0" src="https://preview.p5js.org/SaakshiSaraf/embed/uC6OsBZhY"></iframe>
+                            </div>
+                            
+                                                            
+                        </div>
+                        <div class="about__container bd-grid">
+                            <div class="about__img">
+                                <!-- <img src="assets/img/gif2.gif" alt=""> -->
+                                <iframe style="width: 275px; height: 275px; overflow: hidden; border: 5px solid #000;"  scrolling="no" frameborder="0" src="https://preview.p5js.org/SaakshiSaraf/embed/3LUZEJ5Ey"></iframe>
+                            </div>
+                            
+                                                            
+                        </div>
+                        <div class="about__container bd-grid">
+                            <div class="about__img">
+                                <!-- <img src="assets/img/gif3.gif" alt="c" > -->
+                                <iframe style="width: 275px; height: 275px; overflow: hidden; border: 5px solid #000;"  scrolling="no" frameborder="0" src="https://preview.p5js.org/SaakshiSaraf/embed/Wm1SqAOMD"></iframe>
+                            </div> 
+                            
+                                                            
+                        </div>
+                    </div>
+
+                    <!--ROW 6-->
+                    <div class = "cards_2">
+    
+                        <div class="about__container bd-grid">
+                            <div class="about__img">
+                                <!-- <img src="assets/img/gif1.gif" alt=""> -->
+                                <iframe style="width: 275px; height: 275px; overflow: hidden; border: 5px solid #000;"  scrolling="no" frameborder="0" src="https://preview.p5js.org/SaakshiSaraf/embed/FdWs2pNzu"></iframe>
+                            </div>
+                            
+                                                            
+                        </div>
+                        <div class="about__container bd-grid">
+                            <div class="about__img">
+                                <!-- <img src="assets/img/gif2.gif" alt=""> -->
+                                <iframe style="width: 275px; height: 275px; overflow: hidden; border: 5px solid #000;"  scrolling="no" frameborder="0" src="https://preview.p5js.org/SaakshiSaraf/embed/__ru_juWk"></iframe>
+                            </div>
+                            
+                                                            
+                        </div>
+                        <div class="about__container bd-grid">
+                            <div class="about__img">
+                                <!-- <img src="assets/img/gif3.gif" alt="c" > -->
+                                <iframe style="width: 275px; height: 275px; overflow: hidden; border: 5px solid #000;"  scrolling="no" frameborder="0" src="https://preview.p5js.org/SaakshiSaraf/embed/RFIHiPMmk"></iframe>
+                            </div> 
+                            
+                                                            
+                        </div>
+                    </div>
+
+                    <!--ROW 7-->
+                    <div class = "cards_2">
+    
+                        <div class="about__container bd-grid">
+                            <div class="about__img">
+                                <!-- <img src="assets/img/gif1.gif" alt=""> -->
+                                <iframe style="width: 275px; height: 275px; overflow: hidden; border: 5px solid #000;"  scrolling="no" frameborder="0" src="https://preview.p5js.org/SaakshiSaraf/embed/yfIMU3qXb"></iframe>
+                            </div>
+                            
+                                                            
+                        </div>
+                        <div class="about__container bd-grid">
+                            <div class="about__img">
+                                <!-- <img src="assets/img/gif2.gif" alt=""> -->
+                                <iframe style="width: 275px; height: 275px; overflow: hidden; border: 5px solid #000;"  scrolling="no" frameborder="0" src="https://preview.p5js.org/SaakshiSaraf/embed/cFjEfxBpn"></iframe>
+                            </div>
+                            
+                                                            
+                        </div>
+                        <div class="about__container bd-grid">
+                            <div class="about__img">
+                                <!-- <img src="assets/img/gif3.gif" alt="c" > -->
+                                <iframe style="width: 275px; height: 275px; overflow: hidden; border: 5px solid #000;"  scrolling="no" frameborder="0" src="https://preview.p5js.org/SaakshiSaraf/embed/KHClXyHSt"></iframe>
+                            </div> 
+                            
+                                                            
+                        </div>
+                    </div>
+
+                    <!--ROW 8-->
+                    <div class = "cards_2">
+    
+                        <div class="about__container bd-grid">
+                            <div class="about__img">
+                                <!-- <img src="assets/img/gif1.gif" alt=""> -->
+                                <iframe style="width: 275px; height: 275px; overflow: hidden; border: 5px solid #000;"  scrolling="no" frameborder="0" src="https://preview.p5js.org/SaakshiSaraf/embed/4Go1rhPgj"></iframe>
+                            </div>
+                            
+                                                            
+                        </div>
+                        <div class="about__container bd-grid">
+                            <div class="about__img">
+                                <!-- <img src="assets/img/gif2.gif" alt=""> -->
+                                <iframe style="width: 275px; height: 275px; overflow: hidden; border: 5px solid #000;"  scrolling="no" frameborder="0" src="https://preview.p5js.org/SaakshiSaraf/embed/WdtnZ-K7O"></iframe>
+                            </div>
+                            
+                                                            
+                        </div>
+                        <div class="about__container bd-grid">
+                            <div class="about__img">
+                                <!-- <img src="assets/img/gif3.gif" alt="c" > -->
+                                <iframe style="width: 275px; height: 275px; overflow: hidden; border: 5px solid #000;"  scrolling="no" frameborder="0" src="https://preview.p5js.org/SaakshiSaraf/embed/_WADu9o76"></iframe>
+                            </div> 
+                            
+                                                            
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+            <!--===== ABOUT =====
+            <section class="about section " id="about">
+                <div class = "cards">
+
+                    <div class="about__container bd-grid">
+                        <div class="about__img">
+                            <img src="assets/img/AP-1.png" alt="" width ="700">
+                        </div>
+                        
+                                                        
+                    </div>
+                    <div class="about__container bd-grid">
+                        <div class="about__img">
+                            <img src="assets/img/AP-2.png" alt="" width ="700">
+                        </div>
+                        
+                                                        
+                    </div>
+                    <div class="about__container bd-grid">
+                        <div class="about__img">
+                            <img src="assets/img/AP-3.png" alt="" width ="700">
+                        </div>
+                        
+                                                        
+                    </div>
+                </div>
+            </section>
+            -->
+          
+            
+            <!--===== GALLERY =====
+            <section class="gallery section" id="gallery">
+                <h2 class="section-title">Gallery</h2>
+
+                <div class="carousel">
+                    <a href="#one" class="carousel-item">
+                        <img src="assets/img/art1.jpg">
+                    </a>
+                    <a href="#two" class="carousel-item">
+                        <img src="assets/img/art2.png">
+                    </a>
+                    <a href="#three" class="carousel-item">
+                        <img src="assets/img/art3.png">
+                    </a>
+                    <a href="#four" class="carousel-item">
+                        <img src="assets/img/pink.png">
+                    </a>
+                    <a href="#five" class="carousel-item">
+                        <img src="assets/img/yellowteal-gradient.png">
+                    </a>
+                </div>
+            </section>
+            <div style = "margin-bottom: 50px"></div> 
+            -->
+            <!--===== MY PIECES =====
+            <section class="mypieces section" id="pieces">
+                <h2 class="section-title">My Pieces</h2>
+
+                <div class="mypieces__container bd-grid">
+                    <div class="mypieces__img">
+                        <img src="assets/img/art1.jpg" alt="">
+                    </div>
+                    <div class="mypieces__img">
+                        <img src="assets/img/art2.png" alt="">
+                    </div>
+                    <div class="mypieces__img">
+                        <img src="assets/img/art3.png" alt="">
+                    </div>
+                    <div class="mypieces__img">
+                        <img src="assets/img/orange-gradient.png" alt="">
+                    </div>
+                    <div class="mypieces__img">
+                        <img src="assets/img/pink.png" alt="">
+                    </div>
+                    <div class="mypieces__img">
+                        <img src="assets/img/pinkpurple-gradient.png" alt="">
+                    </div>
+                </div>
+            </section>
+            -->
+            <!--===== CONTACT =====
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact Us</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Submit" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+            -->
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer" style="background-image: url(assets/img/splash-peach.png);">
+            <p class="footer__title">ZilGAM</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p>&#169; 2021 Copyright All rights reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+
+        <!-- ===== CAROUSEL JS ===== -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" 
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer">
+        </script>
+        <!--
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" 
+            integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer">
+        </script>
+        -->
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.carousel').carousel({
+                    indicators: true
+                })
+            });
+        </script>
+    </body>
+</html>
