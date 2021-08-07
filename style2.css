@@ -1,0 +1,40 @@
+/*New MY PIECES TRIAL*/
+.section_top {
+    width:275px;
+    height: 275px;
+    overflow: hidden;
+    position: relative;
+    background-image: url("assets/img/orange-gradient.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin:100px;
+    margin-left: 200px;
+    animation: change 10s infinite ease-in-out;
+  }
+
+  @keyframes change{
+    0%
+    {
+        background-image: url("assets/img/2.jpg");
+    }
+    20%
+    {
+        background-image: url("assets/img/3.jpg");
+    }
+    40%
+    {
+        background-image: url("assets/img/4.jpg");
+    }
+    60%
+    {
+        background-image: url("assets/img/bluepurple-gradient.png");
+    }
+    80%
+    {
+        background-image: url("assets/img/pinkpurple-gradient.png");
+    }
+    100%
+    {
+        background-image: url("assets/img/purple-gradient.png");
+    }
+}
