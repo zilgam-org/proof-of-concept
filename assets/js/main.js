@@ -27,10 +27,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 
 
 /* CONNECTING TO ZILPAY*/
-let btn = document.createElement("button");
-btn.name = "zilpay-btn"
-btn.innerHTML = "Connect to Zilpay";
-btn.addEventListener("click", function () {
+function connectZilpay() {
     if (typeof window.zilPay !== 'undefined') { 
         console.log("Zilpay detected!"); 
 
@@ -39,8 +36,7 @@ btn.addEventListener("click", function () {
 
         zilliqa.wallet.connect();
     }
-});
-document.body.appendChild(btn);
+};
 
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
