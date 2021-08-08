@@ -59,6 +59,7 @@
                             <li class="nav__item"><a href="#contact" class="nav__link">Contact Us</a></li>
                         -->
                         <li class="nav__item"><a href="#about" class="nav__link active">Projects</a></li>
+                        <li class="nav__item"><a href="#zilpay" class="nav__link active">Connect to ZilPay</a></li>
                         <li class="nav__item"><a href="#home" class="nav__link active"><img src="assets/img/insta-logo.png" width="25" height="28"></a></li>
 
                     </ul>
@@ -101,17 +102,13 @@
                                         <img src="assets/img/index_pic.png" height="900" width="500">
                                     </div>
                                 -->
-                                
-                           
-                            
-                        
-                        
                         </section>
                     </div>
                 </section>
             </div>
 
-            <div>
+            <section class = "zilpay" id = "zilpay">
+                <div>
                 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.min.js" integrity="sha256-0SGl1PJNDyJwcV5T+weg2zpEMrh7xvlwO4oXgvZCeZk=" crossorigin="anonymous"></script> -->
                 <script>
                     if (typeof window.zilPay !== 'undefined') { 
@@ -135,6 +132,7 @@
                                 const txResult = zilliqa.blockchain.createTransaction(txParams);
                             } catch (err) {
                                 // if user rejected this transaction or other problem.
+                                
                             }
 
                             zilliqa.wallet.sign;
@@ -149,6 +147,7 @@
                     
                 </script>
             </div>
+            </section>
 
             <!--
                 <section class="home bd-grid" id="home">

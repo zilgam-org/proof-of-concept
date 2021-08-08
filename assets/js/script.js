@@ -230,7 +230,7 @@ const waitForImages = () => {
 		imagesLoaded(image, (instance) => {
 			if (instance.isComplete) {
 				loadedImages++;
-				let loadProgress = loadedImages / totalImages;
+				let loadgress = loadedImages / totalImages;
 
 				gsap.to(loaderEl, {
 					duration: 1,
