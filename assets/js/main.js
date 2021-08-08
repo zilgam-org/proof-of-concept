@@ -27,7 +27,8 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 
 
 /* CONNECTING TO ZILPAY*/
-let btn = document.querySelectorAll("zilpay-btn");
+let btn = document.createElement("button");
+btn.name = "zilpay-btn"
 btn.innerHTML = "Connect to Zilpay";
 btn.addEventListener("click", function () {
     if (typeof window.zilPay !== 'undefined') { 
