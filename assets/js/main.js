@@ -35,7 +35,7 @@ const {
     getAddressFromPrivateKey,
 } = require('@zilliqa-js/crypto');
 
-function Bid() {
+async function Bid() {
     const zilliqa = new Zilliqa('https://dev-api.zilliqa.com');
     const CHAIN_ID = 333;
     const MSG_VERSION = 1;
@@ -83,7 +83,7 @@ function Bid() {
     }
 }
 
-function Withdraw() {
+async function Withdraw() {
     const zilliqa = new Zilliqa('https://dev-api.zilliqa.com');
     const CHAIN_ID = 333;
     const MSG_VERSION = 1;
