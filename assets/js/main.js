@@ -81,7 +81,7 @@ async function Bid() {
     } catch (err) {
         console.log(err);
     }
-}
+};
 
 async function Withdraw() {
     const zilliqa = new Zilliqa('https://dev-api.zilliqa.com');
@@ -130,7 +130,7 @@ async function Withdraw() {
     } catch (err) {
         console.log(err);
     }
-}
+};
 
 /* CONNECTING TO ZILPAY*/
 function connectZilpay() {
