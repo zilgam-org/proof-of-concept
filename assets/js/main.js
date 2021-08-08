@@ -25,6 +25,25 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
+
+/* CONNECTING TO ZILPAY*/
+function connectZilpay() {
+    if (typeof window.zilPay !== 'undefined') { 
+        console.log("Zilpay detected!"); 
+
+        const zilliqa = window.zilPay;
+        const utils = zilPay.utils;
+
+        zilliqa.wallet.connect();
+    }
+    else{
+        if (window.confirm("You do not have ZilPay installed. Click 'OK' to get the entension.")) {
+            window.location.href = "https://zilpay.io/"
+          }
+        
+    }
+};
+
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
     origin: 'top',
