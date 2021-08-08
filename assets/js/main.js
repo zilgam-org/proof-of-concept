@@ -25,6 +25,22 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
+
+/* CONNECTING TO ZILPAY*/
+let btn = document.querySelectorAll("zilpay-btn");
+btn.innerHTML = "Connect to Zilpay";
+btn.addEventListener("click", function () {
+    if (typeof window.zilPay !== 'undefined') { 
+        console.log("Zilpay detected!"); 
+
+        const zilliqa = window.zilPay;
+        const utils = zilPay.utils;
+
+        zilliqa.wallet.connect();
+    }
+});
+document.body.appendChild(btn);
+
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
     origin: 'top',
