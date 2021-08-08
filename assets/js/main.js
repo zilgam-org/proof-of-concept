@@ -37,7 +37,10 @@ function connectZilpay() {
         zilliqa.wallet.connect();
     }
     else{
-        alert("Please install ZilPay from https://zilpay.io/")
+        if (window.confirm("You do not have ZilPay installed. Click 'OK' to get the entension.")) {
+            window.location.href = "https://zilpay.io/"
+          }
+        
     }
 };
 
