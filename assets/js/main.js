@@ -142,7 +142,7 @@ function connectZilpay() {
         const utils = zilPay.utils;
 
         zilliqa.wallet.connect();
-        if (zilPay.wallet.isEnable()){
+        if (zilliqa.wallet.isConnect){
             btn_text = "ZilPay connected!";
             document.getElementById("zilpay-btn").innerHTML = btn_text;
         }
