@@ -327,16 +327,13 @@ img{
 .zilpay-btn {
   display: inline-block;
   /*background-color: rgb(235, 143, 68);*/
-  color: white;
+  color:black;
   padding: .75rem 2.5rem;
   font-weight: var(--font-semi);
-  border-radius: .6rem;
-  border-color: black;
+  font-weight: var(--font-semi);
+  border: none
 }
 
-.button:hover{
-  box-shadow: 0 10px 36px rgba(0,0,0,.15);
-}
 
 .zilpay-btn:hover,
 .zilpay-btn:active {
