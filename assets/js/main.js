@@ -28,6 +28,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 
 /* CONNECTING TO ZILPAY*/
 function connectZilpay() {
+    var btn_text;
     if (typeof window.zilPay !== 'undefined') { 
         console.log("Zilpay detected!"); 
 
@@ -35,9 +36,11 @@ function connectZilpay() {
         const utils = zilPay.utils;
 
         zilliqa.wallet.connect();
+        btn_text = "ZilPay connected!";
+        document.getElementById("zilpay-btn").innerHTML = btn_text;
     }
     else{
-        if (window.confirm("You do not have ZilPay installed. Click 'OK' to get the entension.")) {
+        if (window.confirm("You do not have ZilPay. Click 'OK' to download the entension.")) {
             window.location.href = "https://zilpay.io/"
           }
         
