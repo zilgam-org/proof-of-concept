@@ -141,9 +141,10 @@ function connectZilpay() {
         const zilliqa = window.zilPay;
         const utils = zilPay.utils;
 
-        zilliqa.wallet.connect();
-        btn_text = "ZilPay connected!";
-        document.getElementById("zilpay-btn").innerHTML = btn_text;
+        if (zilliqa.wallet.connect()){
+            btn_text = "ZilPay connected!";
+            document.getElementById("zilpay-btn").innerHTML = btn_text;
+        }
     }
     else{
         if (window.confirm("You do not have ZilPay. Click 'OK' to download the entension.")) {
