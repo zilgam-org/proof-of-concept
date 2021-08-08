@@ -36,6 +36,9 @@ function connectZilpay() {
 
         zilliqa.wallet.connect();
     }
+    else{
+        alert("Please install ZilPay from https://zilpay.io/")
+    }
 };
 
 /*===== SCROLL REVEAL ANIMATION =====*/
