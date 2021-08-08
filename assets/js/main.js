@@ -41,6 +41,11 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 // import {
 //     toBech32Address,
 //     getAddressFromPrivateKey,
+// } = require('@zilliqa-js/crypto');
+
+// import {
+//     toBech32Address,
+//     getAddressFromPrivateKey,
 // } from '@zilliqa-js/crypto';
 
 async function Bid() {
@@ -153,7 +158,7 @@ function connectZilpay() {
 
         if(zilliqa.wallet.isEnable){
             btn_text = "ZilPay connected!";
-            document.getElementById("zilpay-btn").innerHTML = btn_text;
+            document.getElementsByClassName("zilpay-btn").innerHTML = btn_text;
         }
     }
     else{
