@@ -324,6 +324,21 @@ img{
   margin-bottom: 2.5rem;
 }
 
+.zilpay-btn {
+  display: block;
+  font-size: rem;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  cursor: pointer;
+}
+
+.zilpay-btn:hover,
+.zilpay-btn:active {
+  background-color: #0be2f1;
+}
+
 .card-btn {
   display: block;
   width: 100%;
