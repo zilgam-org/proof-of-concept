@@ -28,12 +28,20 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 
 /* SMART CONTRACT STUFF*/
 
-const {BN, Long, bytes, units} = require('@zilliqa-js/util');
-const {Zilliqa} = require('@zilliqa-js/zilliqa');
-const {
+// const {BN, Long, bytes, units} = require('@zilliqa-js/util');
+import {BN, Long, bytes, units} from '@zilliqa-js/util';
+// const {Zilliqa} = require('@zilliqa-js/zilliqa');
+import Zilliqa from '@zilliqa-js/zilliqa';
+
+// const {
+//     toBech32Address,
+//     getAddressFromPrivateKey,
+// } = require('@zilliqa-js/crypto');
+
+import {
     toBech32Address,
     getAddressFromPrivateKey,
-} = require('@zilliqa-js/crypto');
+} from '@zilliqa-js/crypto';
 
 async function Bid() {
     const zilliqa = new Zilliqa('https://dev-api.zilliqa.com');
