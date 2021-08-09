@@ -351,8 +351,9 @@ img{
 .zilpay-con {
   background-color: rgb(8, 211, 8);
   display: block;
-  width: 100%;
-  padding: 1.5rem;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.5rem;
   font-size: rem;
   text-align: center;
   color: #ffffff;
@@ -361,7 +362,7 @@ img{
   transition: 0.2s;
   cursor: pointer;
   letter-spacing: 0.1rem;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .card-btn {
