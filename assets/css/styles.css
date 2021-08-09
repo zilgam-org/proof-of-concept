@@ -280,7 +280,7 @@ img{
   align-items: start;
   margin-bottom: 50px;
   padding:2rem;
-  margin-left: 100px;
+  margin-left: 85px;
   
 }
 
@@ -292,6 +292,7 @@ img{
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: 0.2s;
+
 }
 
 .grid-item:hover {
