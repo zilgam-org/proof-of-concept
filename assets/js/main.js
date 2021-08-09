@@ -156,7 +156,7 @@ async function connectZilpay() {
 
         const connected = await zilliqa.wallet.connect();
         console.log(connected);
-        
+
         if(zilliqa.wallet.isEnable){
             btn_text = "ZilPay connected!";
             document.getElementById("zp-btn").innerHTML = btn_text;
