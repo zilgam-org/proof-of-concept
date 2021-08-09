@@ -354,7 +354,7 @@ img{
   width: fit-content;
   height: fit-content;
   padding: 0.5rem;
-  font-size: 10px;
+  font-size: rem;
   text-align: center;
   color: #ffffff;
   border: none;
