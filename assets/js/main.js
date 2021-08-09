@@ -139,7 +139,7 @@ async function Withdraw() {
 };
 
 /* CONNECTING TO ZILPAY*/
-function connectZilpay() {
+async function connectZilpay() {
     var btn_text;
     if (typeof window.zilPay !== 'undefined') { 
         console.log("Zilpay detected!"); 
@@ -147,8 +147,9 @@ function connectZilpay() {
         const zilliqa = window.zilPay;
         const utils = zilPay.utils;
 
-        zilliqa.wallet.connect();
-
+        const connected = await zilliqa.wallet.connect();
+        console.log(connected);
+        
         if(zilliqa.wallet.isEnable){
             btn_text = "ZilPay connected!";
             document.getElementById("zp-btn").innerHTML = btn_text;
