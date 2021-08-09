@@ -1,3 +1,10 @@
+import { BN, Long, bytes, units } from '../node_modules/zilliqa-js/util'
+// import {BN, Long, bytes, units} from '@zilliqa-js/util';
+import { Zilliqa } from '../node_modules/@zilliqa-js/zilliqa'
+// import Zilliqa from '@zilliqa-js/zilliqa';
+
+import { toBech32Address, getAddressFromPrivateKey } from '../node_modules/@zilliqa-js/crypto'
+
 /*===== MENU SHOW =====*/ 
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
@@ -139,7 +146,7 @@ async function Withdraw() {
 };
 
 /* CONNECTING TO ZILPAY*/
-function connectZilpay() {
+async function connectZilpay() {
     var btn_text;
     if (typeof window.zilPay !== 'undefined') { 
         console.log("Zilpay detected!"); 
@@ -147,8 +154,9 @@ function connectZilpay() {
         const zilliqa = window.zilPay;
         const utils = zilPay.utils;
 
-        zilliqa.wallet.connect();
-
+        const connected = await zilliqa.wallet.connect();
+        console.log(connected);
+        
         if(zilliqa.wallet.isEnable){
             btn_text = "ZilPay connected!";
             document.getElementById("zp-btn").innerHTML = btn_text;
