@@ -326,8 +326,9 @@ img{
 
 .zilpay-btn {
   display: block;
-  width: 100%;
-  padding: 1.5rem;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.75rem;
   font-size: rem;
   text-align: center;
   color: #ffffff;
