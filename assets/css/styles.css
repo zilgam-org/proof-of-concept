@@ -325,13 +325,21 @@ img{
 }
 
 .zilpay-btn {
-  display: inline-block;
-  /*background-color: rgb(235, 143, 68);*/
-  color:black;
-  padding: .75rem 2.5rem;
-  font-weight: var(--font-semi);
-  border: none
+  display: block;
+  width: 100%;
+  padding: .75rem;
+  font-size: rem;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  margin-right: 10px;
 }
+
 
 
 .zilpay-btn:hover,
